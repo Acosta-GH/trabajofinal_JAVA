@@ -34,4 +34,12 @@ public class Producto {
     public String getImagen() { 
         return imagen;  
     }
+
+	@Override
+	public String toString() {
+		return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precio=" + precio
+				+ "]";
+	}
+    
+    
 }
