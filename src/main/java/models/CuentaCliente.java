@@ -29,8 +29,7 @@ public class CuentaCliente {
 	public void setSaldoCuenta(double saldoCuenta) {
 		this.saldoCtaCliente = saldoCuenta;
 	}
-	
-	
+
 }	
 
    
