@@ -3,7 +3,7 @@ package models;
 public class Producto {
     private int id;
     private String nombre;
-    private String descripcion;
+    private String descripcion; // otra prueba
     private double precio;
     private String imagen;  
 
