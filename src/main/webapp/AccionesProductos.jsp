@@ -11,14 +11,14 @@
 	<h1>Gestor de Productos</h1>
 	<p>
 	<h1>Alta Producto</h1>
-	<form action="ProductoControllers" method="post">
+	<form action="ProductoController" method="post">
 		<p>
 			<label for="CodProducto">Código del Producto:</label> <input
 				type="text" id="CodProducto" name="CodProducto" required />
 		</p>
 		<p>
-			<label for="NombreProducto">Nombre del Producto:</label> <input
-				type="text" id="NombreProducto" name="NombreProducto" required />
+			<label for="Nombre">Nombre del Producto:</label> <input
+				type="text" id="Nombre" name="Nombre" required />
 		</p>
 		<p>
 			<label for="UnidadMedidaProducto">Unidad de Medida:</label> <input
@@ -26,8 +26,8 @@
 				required />
 		</p>
 		<p> 
-			<label for="PrecioProducto">Precio del Producto:</label> <input
-				type="number" id="PrecioProducto" name="PrecioProducto" step="0.01"
+			<label for="Precio">Precio del Producto:</label> <input
+				type="number" id="Precio" name="Precio" step="0.01"
 				required />
 		</p>
 		<p>
@@ -39,6 +39,6 @@
 		</p>
 	</form>
 	</p>
-	<a href="ProductoControllers?action=listar">Listado de Productos</a>
+	<a href="ProductoController?action=listar">Listado de Productos</a>
 </body>
 </html>

@@ -17,6 +17,7 @@ import models.Producto;
 public class ProductoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	private GestorProducto ProductoGestor;
 
     public ProductoController() {
     	this.ProductoGestor = GestorProducto.getInstance();
@@ -44,9 +45,9 @@ public class ProductoController extends HttpServlet {
 		Producto nuevoProducto = new Producto();
 		
 		nuevoProducto.setCodProducto(codProd);
-		nuevoProducto.setNombreProducto(nombreProd);
-		nuevoProducto.setUnidadMedidaProductoString(uMProdString);
-		nuevoProducto.setPrecioProducto(precioProducto);
+		nuevoProducto.setNombre(nombreProd);
+		nuevoProducto.setUnidadMedidaProducto(uMProdString);
+		nuevoProducto.setPrecio(precioProducto);
 		nuevoProducto.setStockProducto(stockProducto);
 		
 		this.ProductoGestor.agregarProducto(nuevoProducto);
