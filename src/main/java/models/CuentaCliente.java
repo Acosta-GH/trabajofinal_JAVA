@@ -11,8 +11,8 @@ public class CuentaCliente {
 	}
 
 
-	public CuentaCliente(String nroCuenta, double saldoCuenta) {
-		this.nroCtaCliente = nroCuenta;
+	public CuentaCliente(Cliente cliente, double saldoCuenta) {
+		this.nroCtaCliente = cliente.getDniCliente();
 		this.saldoCtaCliente = saldoCuenta;
 	}
     
@@ -20,9 +20,7 @@ public class CuentaCliente {
 	public String getNroCuenta() {
 		return nroCtaCliente;
 	}
-	public void setNroCuenta(String nroCuenta) {
-		this.nroCtaCliente = nroCuenta;
-	}
+
 	public double getSaldoCuenta() {
 		return saldoCtaCliente;
 	}

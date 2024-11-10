@@ -35,9 +35,9 @@ public class ProductoController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String codProd = request.getParameter("CodProducto");
-		String nombreProd = request.getParameter("NombreProducto");
-		String uMProdString = request.getParameter("UnidadMedidaProducto");
-		String precioProd = request.getParameter("PrecioProducto");
+		String nombreProd = request.getParameter("Nombre");
+		String uMProdString = request.getParameter("unidadMedidaProducto");
+		String precioProd = request.getParameter("Precio");
 		double precioProducto = Double.parseDouble(precioProd);
 		String stockProd = request.getParameter("StockProducto");
 		int stockProducto = Integer.parseInt(stockProd);
@@ -53,5 +53,4 @@ public class ProductoController extends HttpServlet {
 		this.ProductoGestor.agregarProducto(nuevoProducto);
 		
 	}
-
 }
